@@ -1,0 +1,51 @@
+{
+  "name": "vscode-pycord-snippets",
+  "displayName": "Pycord Snippets",
+  "description": "📮 Pycord snippets for Visual Studio Code.",
+  "publisher": "woidzero",
+  "version": "2.0.0",
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.79.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/woidzero/vscode-pycord-snippets.git"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "pycord",
+    "py-cord",
+    "discord",
+    "discord python",
+    "pycord snippets",
+    "snippets",
+    "discord snippets",
+    "vscode python",
+    "python",
+    "discord.py",
+    "discord py"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./snippets/slash.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/commands.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/bridge.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/misc.code-snippets"
+      }
+    ]
+  }
+}

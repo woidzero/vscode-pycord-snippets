@@ -1,0 +1,50 @@
+{
+  "Pycord Bridge Bot": {
+    "prefix": ["pycb.bot", "pycb.main", "pycb.client", "pycb.base"],
+    "body": [
+      "import discord",
+      "from discord.ext import bridge",
+      "",
+      "bot = bridge.Bot(commands_prefix=\"${1:!}\")",
+      "",
+      "bot.run(\"${2:TOKEN}\")"
+    ],
+    "description": "Define bridge bot"
+  },
+  "Pycord Bridge Command": {
+    "prefix": ["pycb.cmd", "pycb.command"],
+    "body": [
+      "@bot.bridge_command()",
+      "async def ${1:commandName}(ctx: bridge.Context) -> None:",
+      "\t..."
+    ],
+    "description": "Define bridge command"
+  },
+  "Pycord Bridge Cog": {
+    "prefix": ["pycb.cog", "pycb.gear"],
+    "body": [
+      "import discord",
+      "from discord.ext import bridge",
+      "",
+      "",
+      "class ${1:Cog}(discord.Cog):",
+      "\tdef __init__(self, bot: bridge.Bot) -> None:",
+      "\t\tself.bot = bot",
+      "",
+      "",
+      "def setup(bot: bridge.Bot) -> None:",
+      "\tbot.add_cog(${1:Cog}(bot))",
+      ""
+    ],
+    "description": "Define bridge cog"
+  },
+  "Pycord Cog Bridge Command": {
+    "prefix": ["pycb.cog.cmd", "pycb.cog.command"],
+    "body": [
+      "\t@bridge.bridge_command()",
+      "\tasync def ${1:command}(self, ctx: bridge.Context) -> None:",
+      "\t\t..."
+    ],
+    "description": "Define bridge command in cog"
+  },
+}

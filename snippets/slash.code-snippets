@@ -1,0 +1,49 @@
+{
+  "Pycord Bot": {
+    "prefix": ["pyc.bot", "pyc.main", "pyc.client", "pyc.base"],
+    "body": [
+      "import discord",
+      "",
+      "bot = discord.Bot()",
+      "",
+      "bot.run(\"${2:TOKEN}\")"
+    ],
+    "description": "Define discord bot"
+  },
+  "Pycord Slash Command": {
+    "prefix": ["pyc.cmd", "pyc.command"],
+    "body": [
+      "@bot.slash_command()",
+      "async def ${1:commandName}(ctx: discord.ApplicationContext) -> None:",
+      "\t..."
+    ],
+    "description": "Define slash command"
+  },
+  "Pycord Cog": {
+    "prefix": ["pyc.cog", "pyc.gear"],
+    "body": [
+      "import discord",
+      "from discord.ext import commands",
+      "",
+      "",
+      "class ${1:Cog}(discord.Cog):",
+      "\tdef __init__(self, bot: discord.Bot) -> None:",
+      "\t\tself.bot = bot",
+      "",
+      "",
+      "def setup(bot: discord.Bot) -> None:",
+      "\tbot.add_cog(${1:Cog}(bot))",
+      ""
+    ],
+    "description": "Define cog"
+  },
+  "Pycord Cog Slash Command": {
+    "prefix": ["pyc.cog.cmd", "pyc.cog.command"],
+    "body": [
+      "\t@discord.slash_command()",
+      "\tasync def ${1:command}(self, ctx: discord.ApplicationContext) -> None:",
+      "\t\t..."
+    ],
+    "description": "Define slash command in cog"
+  },
+}

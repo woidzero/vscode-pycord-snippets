@@ -1,0 +1,26 @@
+{
+  "Pycord Embed": {
+    "prefix": ["pyc.embed", "pyc.emb"],
+    "body": [
+      "emb = discord.Embed()",
+    ],
+    "description": "Define Discord embed"
+  },
+  "Pycord Event on_ready": {
+    "prefix": ["pyc.onReady", "pyc.on_ready"],
+    "body": [
+      "@${1|discord.Cog.listener(),bot.event|}",
+      "async def on_ready() -> None:"
+    ],
+    "description": "Define on_ready event"
+  },
+  "Pycord Event on_message": {
+    "prefix": ["pyc.onMessage", "pyc.on_message"],
+    "body": [
+      "@${1|discord.Cog.listener(),bot.event|}",
+      "async def on_message(message: discord.Message) -> None:",
+      "\t..."
+    ],
+    "description": "Define on_message event"
+  }
+}
