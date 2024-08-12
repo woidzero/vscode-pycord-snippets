@@ -8,7 +8,7 @@
       "",
       "bot.run(\"${2:TOKEN}\")"
     ],
-    "description": "Define discord bot"
+    "description": "Define Discord bot"
   },
   "Pycord Slash Command": {
     "prefix": ["pyc.cmd", "pyc.command"],
@@ -45,5 +45,5 @@
       "\t\t..."
     ],
     "description": "Define slash command in cog"
-  },
+  }
 }

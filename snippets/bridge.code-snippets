@@ -5,9 +5,9 @@
       "import discord",
       "from discord.ext import bridge",
       "",
-      "bot = bridge.Bot(commands_prefix=\"${1:!}\")",
+      "bot = bridge.Bot()",
       "",
-      "bot.run(\"${2:TOKEN}\")"
+      "bot.run(\"${1:TOKEN}\")"
     ],
     "description": "Define bridge bot"
   },
@@ -15,7 +15,7 @@
     "prefix": ["pycb.cmd", "pycb.command"],
     "body": [
       "@bot.bridge_command()",
-      "async def ${1:commandName}(ctx: bridge.Context) -> None:",
+      "async def ${1:command}(ctx: bridge.BridgeContext) -> None:",
       "\t..."
     ],
     "description": "Define bridge command"
@@ -33,8 +33,7 @@
       "",
       "",
       "def setup(bot: bridge.Bot) -> None:",
-      "\tbot.add_cog(${1:Cog}(bot))",
-      ""
+      "\tbot.add_cog(${1:Cog}(bot))"
     ],
     "description": "Define bridge cog"
   },
@@ -42,9 +41,9 @@
     "prefix": ["pycb.cog.cmd", "pycb.cog.command"],
     "body": [
       "\t@bridge.bridge_command()",
-      "\tasync def ${1:command}(self, ctx: bridge.Context) -> None:",
+      "\tasync def ${1:command}(self, ctx: bridge.BridgeExtContext) -> None:",
       "\t\t..."
     ],
     "description": "Define bridge command in cog"
-  },
+  }
 }

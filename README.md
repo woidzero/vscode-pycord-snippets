@@ -9,23 +9,25 @@
 
 ## Snippets
 
-| Name                        | Prefix         | Description                     |
-| --------------------------- | -------------- | ------------------------------- |
-| Pycord Bot                  | pyc.bot        | Define discord bot              |
-| Pycord Commands Bot         | pycc.bot       | Define commands bot             |
-| Pycord Bridge Bot           | pycb.bot       | Define bridge bot               |
-| Pycord Slash Command        | pyc.cmd        | Define slash command            |
-| Pycord Prefixed Command     | pycc.cmd       | Define prefixed command         |
-| Pycord Bridge Command       | pycb.cmd       | Define bridge command           |
-| Pycord Cog                  | pyc.cog        | Define cog                      |
-| Pycord Commands Cog         | pycc.cog       | Define commands cog             |
-| Pycord Bridge Cog           | pycb.cog       | Define bridge cog               |
-| Pycord Cog Slash Command    | pyc.cog.cmd    | Define slash command for cog    |
-| Pycord Cog Prefixed Command | pycc.cog.cmd   | Define prefixed command for cog |
-| Pycord Cog Bridge Command   | pycb.cog.cmd   | Define bridge command for cog   |
-| Pycord Embed                | pyc.emb        | Define Discord embed            |
-| Pycord Event on_ready       | pyc.on_ready   | Define on_ready event           |
-| Pycord Event on_message     | pyc.on_message | Define on_message event         |
+| Name                          | Prefix               | Description                    |
+| ----------------------------- | -------------------- | ------------------------------ |
+| Pycord Bot                    | pyc.bot              | Define Discord bot             |
+| Pycord Commands Bot           | pycc.bot             | Define commands bot            |
+| Pycord Bridge Bot             | pycb.bot             | Define bridge bot              |
+| Pycord Slash Command          | pyc.cmd              | Define slash command           |
+| Pycord Prefixed Command       | pycc.cmd             | Define prefixed command        |
+| Pycord Bridge Command         | pycb.cmd             | Define bridge command          |
+| Pycord Cog                    | pyc.cog              | Define cog                     |
+| Pycord Commands Cog           | pycc.cog             | Define commands cog            |
+| Pycord Bridge Cog             | pycb.cog             | Define bridge cog              |
+| Pycord Cog Slash Command      | pyc.cog.cmd          | Define slash command in cog    |
+| Pycord Cog Prefixed Command   | pycc.cog.cmd         | Define prefixed command in cog |
+| Pycord Cog Bridge Command     | pycb.cog.cmd         | Define bridge command in cog   |
+| Pycord Embed                  | pyc.emb              | Define Discord embed           |
+| Pycord Event on_ready         | pyc.on_ready         | Define on_ready event          |
+| Pycord Event on_message       | pyc.on_message       | Define on_message event        |
+| Pycord Event on_command_error | pyc.on_command_error | Define on_command_error event  |
+| Pycord Event                  | pyc.event            | Define on_message event        |
 
 ## License
 

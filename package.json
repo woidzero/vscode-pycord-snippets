@@ -3,7 +3,7 @@
   "displayName": "Pycord Snippets",
   "description": "📮 Pycord snippets for Visual Studio Code.",
   "publisher": "woidzero",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.79.0"
